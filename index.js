@@ -8,8 +8,8 @@ const mondayWork = function (activity='go to the office'){
     return `This Monday, I will ${activity}.`;
 }
 
-function wrapAdjective(adj="*"){
-    return function (desc="a hard worker"){
-        return `You are ${adj}${desc}${adj}!`;
+function wrapAdjective(highlight="*"){
+    return function (adjective="a hard worker"){
+        return `You are ${highlight}${adjective}${highlight}!`;
     }
 }
